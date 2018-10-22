@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftSeedProject/Application/Service/SourceService.swift"
+            timestampString = "561927762.811973"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "updateLocalStoreWithServerInfo(onSuccess:onError:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftSeedProject/Infrastructure/RestClient+SourceEndpoints.swift"
+            timestampString = "561927762.8121229"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "getSources(category:language:country:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (SwiftyJSON.JSON) -&gt; Swift.Optional&lt;Swift.Array&lt;SwiftSeedProject.Source&gt;&gt; in SwiftSeedProject.RestClient.getSources(category: Swift.Optional&lt;SwiftSeedProject.SourceCategory&gt;, language: Swift.Optional&lt;SwiftSeedProject.Language&gt;, country: Swift.Optional&lt;SwiftSeedProject.Country&gt;, completion: (SwiftSeedProject.DataResult&lt;Swift.Array&lt;SwiftSeedProject.Source&gt;&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "SwiftSeedProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/briansztamfater/Work/MakingSense/mobile-pocs/IOS/SwiftSeedProject/SwiftSeedProject/Infrastructure/RestClient+SourceEndpoints.swift"
+                  timestampString = "561920218.624819"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (SwiftyJSON.JSON) -&gt; SwiftSeedProject.Source in closure #1 (SwiftyJSON.JSON) -&gt; Swift.Optional&lt;Swift.Array&lt;SwiftSeedProject.Source&gt;&gt; in SwiftSeedProject.RestClient.getSources(category: Swift.Optional&lt;SwiftSeedProject.SourceCategory&gt;, language: Swift.Optional&lt;SwiftSeedProject.Language&gt;, country: Swift.Optional&lt;SwiftSeedProject.Country&gt;, completion: (SwiftSeedProject.DataResult&lt;Swift.Array&lt;SwiftSeedProject.Source&gt;&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "SwiftSeedProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/briansztamfater/Work/MakingSense/mobile-pocs/IOS/SwiftSeedProject/SwiftSeedProject/Infrastructure/RestClient+SourceEndpoints.swift"
+                  timestampString = "561920218.628916"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "14">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftSeedProject/Domain/Source.swift"
+            timestampString = "561927762.812197"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "updateWithJSON(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftSeedProject/Domain/Source.swift"
+            timestampString = "561927762.812253"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "init(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftSeedProject/Domain/Source+Persistable.swift"
+            timestampString = "561927762.812302"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "didInsert(with:for:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftSeedProject/Interfaces/ViewControllers/NewsFeedCollectionViewController.swift"
+            timestampString = "561927762.812349"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "dataSource"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftSeedProject/Application/ViewModels/NewsFeedViewModel.swift"
+            timestampString = "561927762.812423"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "getArticles()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Array&lt;SwiftSeedProject.Article&gt;) -&gt; () in SwiftSeedProject.NewsFeedViewModel.getArticles() -&gt; ()"
+                  moduleName = "SwiftSeedProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/briansztamfater/Work/MakingSense/mobile-pocs/IOS/SwiftSeedProject/SwiftSeedProject/Application/ViewModels/NewsFeedViewModel.swift"
+                  timestampString = "561926300.151785"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "176">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (SwiftSeedProject.Article) -&gt; SwiftSeedProject.ArticleViewModel in closure #1 (Swift.Array&lt;SwiftSeedProject.Article&gt;) -&gt; () in SwiftSeedProject.NewsFeedViewModel.getArticles() -&gt; ()"
+                  moduleName = "SwiftSeedProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/briansztamfater/Work/MakingSense/mobile-pocs/IOS/SwiftSeedProject/SwiftSeedProject/Application/ViewModels/NewsFeedViewModel.swift"
+                  timestampString = "561926300.153953"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "14">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftSeedProject/Application/ViewModels/NewsFeedViewModel.swift"
+            timestampString = "561927762.812482"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "getArticles()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftSeedProject/Interfaces/ViewControllers/NewsFeedCollectionViewController.swift"
+            timestampString = "561927762.8125269"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
