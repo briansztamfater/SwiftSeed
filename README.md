@@ -6,7 +6,7 @@ This project contains the codebase for an MVVM iOS application in Swift. It reli
 
 The structure of the project is as follow:
 
-- Interfaces Layer
+- UI Layer
   - iOS UI (Storyboards, Views/ViewControllers, and other UI components)
 
 - Application Layer
