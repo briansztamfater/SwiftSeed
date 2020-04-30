@@ -7,14 +7,12 @@ target 'SwiftSeedProject' do
 
   # Pods for SwiftSeedProject
 
-  pod 'Dip', '6.0.0'
-  pod 'Dip-UI', '2.0'
-  pod 'RxSwift', '4.0.0'
-  pod 'RxCocoa', '4.0.0'
-  pod 'RxDataSources', '~> 3.0'
+  pod 'Dip', '7.1.1'
+  pod 'RxSwift', '~> 5'
+  pod 'RxCocoa', '~> 5'
+  pod 'RxDataSources', '~> 4.0'
   pod 'RxGRDB'
-  pod 'Alamofire', '4.5.1'
-  pod 'SwiftyJSON', '3.1.4'
-  pod 'SDWebImage', '4.0.0'
+  pod 'SwiftyJSON', '~> 4.0'
+  pod 'SDWebImage', '5.7.3'
 
 end

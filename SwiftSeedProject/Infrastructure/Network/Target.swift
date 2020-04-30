@@ -7,14 +7,13 @@
 //
 
 import Foundation
-import Alamofire
 import SwiftyJSON
 
 protocol Target {
     var baseUrl: URL { get }
     var apiKey: String? { get }
     var commonHeaders: [String : String]? { get }
-    var method: HTTPMethod { get }
+    var method: String { get }
     var url: URL { get }
-    var errorSanitizer: (JSON) -> Result<JSON> { get }
+    var errorSanitizer: (JSON) throws -> JSON { get }
 }

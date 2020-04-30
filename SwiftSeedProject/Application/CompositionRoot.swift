@@ -7,7 +7,6 @@
 //
 
 import Dip
-import Dip_UI
 import GRDB
 
 extension DependencyContainer {

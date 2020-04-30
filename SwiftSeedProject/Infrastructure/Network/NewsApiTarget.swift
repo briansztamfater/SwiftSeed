@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import Alamofire
 import SwiftyJSON
 
 enum NewsApiTarget: Target {
@@ -21,12 +20,12 @@ enum NewsApiTarget: Target {
     case GetArticles(source: Source, sortBy: String?)
     
     // MARK: - Public Properties
-    var method: HTTPMethod {
+    var method: String {
         switch self {
         case .GetSources:
-            return .get
+            return "GET"
         case .GetArticles:
-            return .get
+            return "GET"
         }
     }
     
@@ -44,15 +43,15 @@ enum NewsApiTarget: Target {
         }
     }
     
-    var errorSanitizer: (JSON) -> Result<JSON> {
+    var errorSanitizer: (JSON) throws -> JSON {
         return { json in
             if json["status"].stringValue == "ok" {
-                return .success(json)
+                return json
             }
             
             let message = json["message"].stringValue
             let error = NSError(domain: InfoUtils.bundleNameKey(), code: ErrorCode.Undefined, userInfo: [NSLocalizedDescriptionKey : message])
-            return .failure(error)
+            throw error
         }
     }
 }

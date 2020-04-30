@@ -18,7 +18,6 @@ class RGDBPersistence: Persistence {
     
     init(databasePool: DatabasePool) {
         db = databasePool
-        db.setupMemoryManagement(in: UIApplication.shared)
     }
     
     public func getAll<T: PersistenceObject>(conditions: [String : String]?, orderBy attributeNames: [String]? = nil) -> [T] {
@@ -44,7 +43,7 @@ class RGDBPersistence: Persistence {
                         }
                     }
                 }
-                return try T.fetchAll(db, sql)
+                return try T.fetchAll(db, sql: sql)
             }
             return fetchedObjects
         } catch let error as NSError {
@@ -56,7 +55,7 @@ class RGDBPersistence: Persistence {
         do {
             let fetchedObject = try db.read { db -> T? in
                 let sql = "SELECT * FROM \(T.databaseTableName) WHERE \(attributeName) = ?"
-                return try T.fetchOne(db, sql, arguments: [attributeValue])
+                return try T.fetchOne(db, sql: sql, arguments: [attributeValue])
             }
             return fetchedObject
         } catch let error as NSError {
@@ -67,7 +66,7 @@ class RGDBPersistence: Persistence {
     public func getByQuery<T: PersistenceObject>(_ query: String) -> [T]? {
         do {
             let fetchedObject = try db.read { db -> [T]? in
-                return try T.fetchAll(db, query)
+                return try T.fetchAll(db, sql: query)
             }
             return fetchedObject
         } catch let error as NSError {

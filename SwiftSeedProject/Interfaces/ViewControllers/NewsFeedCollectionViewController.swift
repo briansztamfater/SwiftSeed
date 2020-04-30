@@ -7,7 +7,6 @@
 //
 
 import Dip
-import Dip_UI
 import RxCocoa
 import RxDataSources
 import RxSwift
