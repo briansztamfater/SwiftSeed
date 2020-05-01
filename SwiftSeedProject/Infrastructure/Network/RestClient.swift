@@ -11,7 +11,7 @@ import SwiftyJSON
 
 final class RestClient {
     // MARK: - Private Functions
-    private func start<T: Any>(target: Target, parameters: [String : AnyObject]? = nil, headers: [String : String]? = nil, completion: @escaping (DataResult<T>) -> Void, processResponse: @escaping (JSON) -> Any?) {
+    private func start<T: Any>(target: Target, parameters: [String : Any]? = nil, headers: [String : String]? = nil, completion: @escaping (DataResult<T>) -> Void, processResponse: @escaping (JSON) -> Any?) {
         var request = URLRequest(url: target.url)
         request.httpMethod = target.method
         request.addValue("application/json", forHTTPHeaderField: "Accept")
@@ -25,6 +25,7 @@ final class RestClient {
                 request.setValue(headerField.value, forHTTPHeaderField: headerField.key)
             }
         }
+        request.httpBody = parameters?.percentEncoded()
         
         let task = URLSession.shared.dataTask(with: request) { data, response, responseError in
             guard let responseError = responseError else {
@@ -44,11 +45,11 @@ final class RestClient {
     }
 
     // MARK: - Internal Functions
-    internal func execute<T>(target: Target, parameters: [String : AnyObject]? = nil, completion: @escaping (DataResult<T>) -> Void, processResponse: @escaping (JSON) -> T?) {
+    internal func execute<T>(target: Target, parameters: [String : Any]? = nil, completion: @escaping (DataResult<T>) -> Void, processResponse: @escaping (JSON) -> T?) {
         self.start(target: target, parameters: parameters, headers: nil, completion: completion, processResponse: processResponse)
     }
     
-    internal func execute<T>(target: Target, parameters: [String : AnyObject]? = nil, completion: @escaping (DataResult<[T]>) -> Void, processResponse: @escaping (JSON) -> [T]?) {
+    internal func execute<T>(target: Target, parameters: [String : Any]? = nil, completion: @escaping (DataResult<[T]>) -> Void, processResponse: @escaping (JSON) -> [T]?) {
         self.start(target: target, parameters: parameters, headers: nil, completion: completion, processResponse: processResponse)
     }
 }

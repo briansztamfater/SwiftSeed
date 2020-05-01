@@ -40,6 +40,7 @@
 		C103B7CE217D976000625EB9 /* UIViewController+NavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C103B7CD217D976000625EB9 /* UIViewController+NavigationDelegate.swift */; };
 		C103B7D2217D97D300625EB9 /* NavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C103B7D1217D97D300625EB9 /* NavigationDelegate.swift */; };
 		C103B7D8217D98E300625EB9 /* SegueIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C103B7D4217D98E200625EB9 /* SegueIdentifier.swift */; };
+		C1B172A4245BA6E40048FBD8 /* CharacterSet+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B172A3245BA6E40048FBD8 /* CharacterSet+Extensions.swift */; };
 		C1C121A7217D728A00CCAD64 /* RGDBPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C121A3217D728A00CCAD64 /* RGDBPersistence.swift */; };
 		C1C121A8217D728A00CCAD64 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C121A4217D728A00CCAD64 /* Persistence.swift */; };
 		C1C121A9217D728A00CCAD64 /* PersistenceObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C121A5217D728A00CCAD64 /* PersistenceObject.swift */; };
@@ -107,6 +108,7 @@
 		C103B7CD217D976000625EB9 /* UIViewController+NavigationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+NavigationDelegate.swift"; sourceTree = "<group>"; };
 		C103B7D1217D97D300625EB9 /* NavigationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationDelegate.swift; sourceTree = "<group>"; };
 		C103B7D4217D98E200625EB9 /* SegueIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueIdentifier.swift; sourceTree = "<group>"; };
+		C1B172A3245BA6E40048FBD8 /* CharacterSet+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CharacterSet+Extensions.swift"; sourceTree = "<group>"; };
 		C1C121A3217D728A00CCAD64 /* RGDBPersistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGDBPersistence.swift; sourceTree = "<group>"; };
 		C1C121A4217D728A00CCAD64 /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		C1C121A5217D728A00CCAD64 /* PersistenceObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenceObject.swift; sourceTree = "<group>"; };
@@ -401,6 +403,7 @@
 			isa = PBXGroup;
 			children = (
 				A0F32F661E9D778000A209EB /* Dictionary+Extensions.swift */,
+				C1B172A3245BA6E40048FBD8 /* CharacterSet+Extensions.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -616,6 +619,7 @@
 				A0F32F561E9D759D00A209EB /* DataResult.swift in Sources */,
 				D399D8E71EAA628600018806 /* RestClient+SourceEndpoints.swift in Sources */,
 				A0BE1E5F1EA66CCD00F96E28 /* ArticleViewModel.swift in Sources */,
+				C1B172A4245BA6E40048FBD8 /* CharacterSet+Extensions.swift in Sources */,
 				A0B30DE51EAA5850000B5935 /* SourceListViewController.swift in Sources */,
 				D34AC7DF1EA4EF8200BB742E /* ErrorCode.swift in Sources */,
 				9CC3846F1E7C17AD00595171 /* AppDelegate.swift in Sources */,
